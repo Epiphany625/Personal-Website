@@ -1,0 +1,90 @@
+/* Education.css */
+
+.education-container {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  padding: 30px;
+  background-color: #f9f9f9db;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 85%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s ease-in-out;
+}
+
+.education-container:hover{
+  scale: 1.03;
+}
+
+.logo-box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+  transition: 0.3s ease-in-out;
+}
+.logo-image:hover{
+  scale: 1.03;
+}
+
+.info {
+  line-height: 1.2; /* Closer line spacing */
+  flex: 1;
+  color: #333; /* Dark gray text color */
+}
+
+.info h1 {
+  font-size: 2em;
+  margin: 0 0 10px 0;
+}
+
+.info p, .info ul {
+  font-size: 1.3em;
+  margin: 5px 0;
+}
+
+.gpa {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+@media (max-width: 700px) {
+  .logo-box{
+    width: 100px;
+    height: 100px;
+  }
+  .info {
+    line-height: 1.1; /* Closer line spacing */
+    flex: 1;
+    color: #333; /* Dark gray text color */
+  }
+  
+  .info h1 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+  }
+  
+  .info p, .info ul {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+}

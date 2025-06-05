@@ -1,0 +1,23 @@
+.returnToTop{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.returnToTop-button{
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    transition: 0.3s ease-in-out;
+    background-color: #f9f9f9f2;
+}
+.returnToTop-button:hover{
+    scale: 1.05;
+}
+
+.returnToTop-text{
+    font-size: 20px;
+}
+.returnToTop-text:hover{
+    text-decoration: none;
+}

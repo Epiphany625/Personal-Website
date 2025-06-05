@@ -1,0 +1,67 @@
+/* src/Hobbies.css */
+
+.projects-container {
+    text-align: center;
+    color: #333; /* Dark grey color for text */
+    padding: 2rem;
+    position: relative; /* To position absolute elements */
+    z-index: 1; /* Lower z-index to keep it behind the navbar */
+  }
+  
+  .projects-title {
+    font-size: 2.9rem;
+    color: #1e3a8a; /* A degree of blue for the title */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    animation: pulse 1.5s infinite; /* Smooth pulsing animation */
+    background: linear-gradient(90deg, #1e90ff, #1e3a8a); /* Vibrant gradient */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Use transparent color to show gradient */
+  }
+  
+  .photos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem; /* Space between photos */
+    position: relative; /* Positioning context for absolute photos */
+    z-index: 1; /* Lower z-index to keep it behind the navbar */
+    margin-bottom: 5%;
+  }
+  
+  .projects-photo {
+    width: 180px; /* Adjust size as needed */
+    height: 180px; /* Adjust size as needed */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    cursor: pointer;
+    animation: float 5s ease-in-out infinite; /* Floating animation */
+    background-color: #1e2431c7;
+  }
+  
+  /* Enlarge on hover */
+  .hobby-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 13px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust the floating height */
+    }
+  }
+
+  @media (max-width: 768px){
+    .projects-title{
+      font-size: 2rem;
+    }
+  }
+  
