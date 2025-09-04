@@ -18,7 +18,6 @@ const NaviBar = () => {
         <li><Link to="/hobbies" onClick={() => setMenuOpen(false)}>Hobbies</Link></li>
         <li><Link to="/experience" onClick={() => setMenuOpen(false)}>Experience</Link></li>
         <li><Link to="/education" onClick={() => setMenuOpen(false)}>Education</Link></li>
-        <li><Link to="/feedback" onClick={() => setMenuOpen(false)}>Feedback</Link></li>
       </ul>
       <div className="hamburger" onClick={toggleMenu}>
         <span></span>
