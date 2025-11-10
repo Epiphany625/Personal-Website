@@ -1,60 +1,38 @@
-/* src/Hobbies.css */
+.experience-backdrop {
+  padding: clamp(3rem, 6vw, 6rem) 0;
+  background: radial-gradient(circle at 10% 20%, rgba(100, 255, 218, 0.08), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(168, 85, 247, 0.08), transparent 45%),
+    linear-gradient(120deg, rgba(3, 6, 17, 0.95), rgba(8, 17, 35, 0.85));
+  border-radius: 28px;
+}
 
-.experience-container {
-    text-align: center;
-    color: #333; /* Dark grey color for text */
-    padding: 2rem;
-    position: relative; /* To position absolute elements */
-    z-index: 1; /* Lower z-index to keep it behind the navbar */
-  }
-  
-  .experience-title {
-    font-size: 2.9rem;
-    color: #1e3a8a; /* A degree of blue for the title */
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    animation: pulse 1.5s infinite; /* Smooth pulsing animation */
-    background: linear-gradient(90deg, #1e90ff, #1e3a8a); /* Vibrant gradient */
-    -webkit-background-clip: text; /* Clip the background to the text */
-    color: transparent; /* Use transparent color to show gradient */
-  }
-  
-  .photos-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem; /* Space between photos */
-    position: relative; /* Positioning context for absolute photos */
-    z-index: 1; /* Lower z-index to keep it behind the navbar */
-    margin-bottom: 5%;
-  }
-  
-  .experience-photo {
-    width: 180px; /* Adjust size as needed */
-    height: 180px; /* Adjust size as needed */
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    cursor: pointer;
-    animation: float 5s ease-in-out infinite; /* Floating animation */
-  }
-  
-  /* Enlarge on hover */
-  .hobby-photo:hover {
-    transform: scale(1.1);
-    box-shadow: 0 13px 25px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Floating animation */
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px); /* Adjust the floating height */
-    }
-  }
-  
+.experience {
+  color: var(--text);
+}
+
+.experience-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+}
+
+.experience-header h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 1rem;
+}
+
+.experience-header p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.experience-grid .info-card {
+  margin: 0;
+}

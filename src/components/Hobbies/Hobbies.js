@@ -23,7 +23,7 @@ const Hobbies = () => {
 
   return (
     <div style={{backgroundImage:`url(${hobbiesBg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed', backgroundRepeat: 'no-repeat',}}>
-      <div className="hobbies-container" id="hobbies-container">
+      <div className="hobbies-container section-shell" id="hobbies-container">
         <h1 className="hobbies-title">------SKY IS THE LIMIT------</h1>
         <div className="photos-container">
           {photos.map((photo, index) => (
